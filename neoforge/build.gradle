@@ -1,0 +1,30 @@
+plugins
+{
+	id "net.neoforged.moddev" version "${neoforge_moddev_version}"
+}
+
+neoForge
+{
+	version = neoforge_version
+	parchment
+	{
+		minecraftVersion = parchment_minecraft
+		mappingsVersion = parchment_version
+	}
+
+	runs
+	{
+		client { client() }
+		server { server() }
+	}
+
+	dependencies
+	{
+		implementation files("mocap-neoforge.jar")
+	}
+
+	mods
+	{
+		"${mod_id}" { sourceSet sourceSets.main }
+	}
+}
