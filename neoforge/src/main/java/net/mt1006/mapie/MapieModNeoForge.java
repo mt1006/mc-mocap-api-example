@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 @Mod(MapieMod.MOD_ID)
 public class MapieModNeoForge implements MapieModLoaderInterface
 {
-	public static final boolean isDedicatedServer = FMLEnvironment.dist.isDedicatedServer();
+	public static final boolean isDedicatedServer = FMLEnvironment.getDist().isDedicatedServer();
 	private final @Nullable ModContainer modContainer;
 
 	public MapieModNeoForge(IEventBus eventBus)

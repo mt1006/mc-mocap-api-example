@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 public class MapieMod
 {
 	public static final String MOD_ID = "mocapapiexample";
-	public static final String FOR_VERSION = "1.21.1";
+	public static final String FOR_VERSION = "1.21.10";
 
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static MapieModLoaderInterface loaderInterface = null;

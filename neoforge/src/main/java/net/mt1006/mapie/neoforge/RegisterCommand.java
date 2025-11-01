@@ -7,7 +7,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.server.command.ConfigCommand;
 
-@EventBusSubscriber(modid = MapieMod.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = MapieMod.MOD_ID)
 public class RegisterCommand
 {
 	@SubscribeEvent
